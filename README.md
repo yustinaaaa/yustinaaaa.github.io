@@ -167,3 +167,7 @@ Verified with no horizontal overflow and no clipped/overlapping content at
 1920, 1440, 1280, 1024, 900, 768, 600, 430, 390, 375, 360 and 320px, plus the
 touch/mobile-specific interaction states (tap targets, hover-only effects
 disabled).
+
+
+## Responsive QA patch
+This revision prevents display headings from splitting inside words, constrains the hero cards at narrow widths, replaces the ACE orbital diagram with a typographic gradient panel, and converts the practice flow into a responsive typographic strip.

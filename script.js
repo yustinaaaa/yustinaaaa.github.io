@@ -63,13 +63,3 @@ function renderLanguage(lang) {
 langButton.addEventListener('click', () => renderLanguage(current === 'ru' ? 'en' : 'ru'));
 renderLanguage(localStorage.getItem('portfolioLang') || 'ru');
 
-const artifacts = [...document.querySelectorAll('.artifact')];
-
-const dot = document.querySelector('.cursor-dot');
-if (matchMedia('(hover:hover)').matches) {
-  window.addEventListener('pointermove', e => {
-    dot.style.opacity = '1';
-    dot.style.left = `${e.clientX}px`;
-    dot.style.top = `${e.clientY}px`;
-  }, {passive:true});
-}
