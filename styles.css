@@ -374,3 +374,50 @@ dd { margin: 0; font-size: 10px; line-height: 1.35; text-transform: uppercase; l
     max-width: 100%;
   }
 }
+
+
+/* ACE final visual fix */
+.startup-grid {
+  align-items: center;
+}
+
+.startup-visual-final {
+  width: 100%;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startup-visual-final img {
+  width: min(720px, 100%);
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* remove old node diagram artifacts */
+.startup-diagram,
+.ace-node,
+.ace-core {
+  display: none;
+}
+
+/* keep project numbers above colored cards */
+.case-index {
+  z-index: 20;
+  mix-blend-mode: normal;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .startup-visual-final {
+    min-height: 280px;
+    margin-top: 30px;
+  }
+
+  .startup-visual-final img {
+    width: 115%;
+    max-width: none;
+  }
+}
