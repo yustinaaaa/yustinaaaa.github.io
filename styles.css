@@ -340,3 +340,37 @@ dd { margin: 0; font-size: 10px; line-height: 1.35; text-transform: uppercase; l
     min-height: 170px;
   }
 }
+
+
+/* FINAL ACE HERO FIX */
+.startup-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 420px;
+}
+
+.ace-cards-image {
+  width: min(42vw, 560px);
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.startup-visual span,
+.startup-visual .number {
+  position: static !important;
+}
+
+@media (max-width: 700px) {
+  .startup-visual {
+    min-height: auto;
+    margin-top: 35px;
+  }
+
+  .ace-cards-image {
+    width: 88vw;
+    max-width: 100%;
+  }
+}
