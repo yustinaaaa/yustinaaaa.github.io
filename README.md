@@ -171,3 +171,11 @@ disabled).
 
 ## Responsive QA patch
 This revision prevents display headings from splitting inside words, constrains the hero cards at narrow widths, replaces the ACE orbital diagram with a typographic gradient panel, and converts the practice flow into a responsive typographic strip.
+
+## ACE visual assets
+The ACE section uses public, non-NDA materials in `assets/`:
+- `ace-logo.svg` — vector ACE logo
+- `ace-cards.webp` — student card identity render
+- `ace-app.webp` — app icon / phone mockup
+
+Replace these files with the same filenames to update the ACE visuals without changing the layout.
