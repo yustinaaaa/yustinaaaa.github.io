@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="topbar-scrim" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brandmark" href="#top" aria-label="Home">YS</a>
     <nav class="nav" aria-label="Primary">
@@ -89,8 +89,13 @@
         <h2 id="work-title" data-i18n="work.title">Избранные проекты.<br/>Luxury, FMCG, tech, events.</h2>
       </div>
 
-      <article class="case case-01" data-case="01">
-        <div class="case-field" aria-hidden="true"><span class="case-num">01</span></div>
+      <article class="case case-dark" data-case="01">
+        <div class="case-index">01</div>
+        <div class="case-visual visual-luxury" aria-label="Abstract visual placeholder">
+          <div class="ring ring-a"></div><div class="ring ring-b"></div>
+          <div class="case-stamp">NDA / RETAIL</div>
+          <div class="case-word">RITUAL</div>
+        </div>
         <div class="case-copy">
           <div class="case-tag" data-i18n="case1.tag">Luxury retail · 4 international fragrance brands</div>
           <h3 data-i18n="case1.title">Сезонные retail-активации для 4 fragrance-брендов</h3>
@@ -103,7 +108,8 @@
         </div>
       </article>
 
-      <article class="case case-02 case-reverse" data-case="02">
+      <article class="case case-paper" data-case="02">
+        <div class="case-index">02</div>
         <div class="case-copy">
           <div class="case-tag" data-i18n="case2.tag">Luxury · client days · retail</div>
           <h3 data-i18n="case2.title">Holiday client days / Opera Night</h3>
@@ -114,11 +120,20 @@
             <div><dt data-i18n="labels.outcome">результат</dt><dd data-i18n="case2.outcome">winning concept</dd></div>
           </dl>
         </div>
-        <div class="case-field" aria-hidden="true"><span class="case-num">02</span></div>
+        <div class="case-visual visual-opera">
+          <div class="curtain curtain-left"></div><div class="curtain curtain-right"></div>
+          <div class="opera-type">OPERA<br/>NIGHT</div>
+          <div class="bow">∞</div>
+        </div>
       </article>
 
-      <article class="case case-03" data-case="03">
-        <div class="case-field" aria-hidden="true"><span class="case-num">03</span></div>
+      <article class="case case-acid" data-case="03">
+        <div class="case-index">03</div>
+        <div class="case-visual visual-phygital">
+          <div class="flame f1"></div><div class="flame f2"></div><div class="flame f3"></div>
+          <div class="pixel p1"></div><div class="pixel p2"></div><div class="pixel p3"></div>
+          <div class="case-word vertical">MOVE</div>
+        </div>
         <div class="case-copy">
           <div class="case-tag" data-i18n="case3.tag">Phygital · FMCG · culture</div>
           <h3 data-i18n="case3.title">Phygital-интеграция для 3 FMCG-брендов</h3>
@@ -131,7 +146,8 @@
         </div>
       </article>
 
-      <article class="case case-04 case-reverse" data-case="04">
+      <article class="case case-mono" data-case="04">
+        <div class="case-index">04</div>
         <div class="case-copy">
           <div class="case-tag" data-i18n="case4.tag">Tech · employer brand · festival</div>
           <h3 data-i18n="case4.title">Employer-brand активация на food-фестивале</h3>
@@ -142,13 +158,17 @@
             <div><dt data-i18n="labels.outcome">результат</dt><dd data-i18n="case4.outcome">часть предложенных элементов реализована</dd></div>
           </dl>
         </div>
-        <div class="case-field" aria-hidden="true"><span class="case-num">04</span></div>
+        <div class="case-visual visual-tech">
+          <div class="target t1"></div><div class="target t2"></div><div class="target t3"></div>
+          <div class="case-word">MEET</div>
+        </div>
       </article>
 
-      <article class="case case-05" data-case="05">
-        <div class="case-field case-field-proof" aria-hidden="true">
-          <span class="case-proof-number">50M ₽</span>
-          <span class="case-proof-label" data-i18n="case5.proof">initial federal tender brief</span>
+      <article class="case case-blue" data-case="05">
+        <div class="case-index">05</div>
+        <div class="case-visual visual-music">
+          <div class="wave w1"></div><div class="wave w2"></div><div class="wave w3"></div><div class="wave w4"></div>
+          <div class="qr">PLAY<br/>▶</div>
         </div>
         <div class="case-copy">
           <div class="case-tag" data-i18n="case5.tag">FMCG · federal promo · music × retail</div>
@@ -162,7 +182,8 @@
         </div>
       </article>
 
-      <article class="case case-06 case-reverse" data-case="06">
+      <article class="case case-white" data-case="06">
+        <div class="case-index">06</div>
         <div class="case-copy">
           <div class="case-tag" data-i18n="case6.tag">Corporate event · international beauty</div>
           <h3 data-i18n="case6.title">Двухдневное событие / 100 гостей</h3>
@@ -173,9 +194,11 @@
             <div><dt data-i18n="labels.outcome">результат</dt><dd data-i18n="case6.outcome">проект прошёл во второй тур</dd></div>
           </dl>
         </div>
-        <div class="case-field" aria-hidden="true"><span class="case-num">06</span></div>
+        <div class="case-visual visual-event">
+          <div class="flower">✦</div><div class="circus">○</div><div class="grid-noise"></div>
+          <div class="case-word">100</div>
+        </div>
       </article>
-
     </section>
 
     <section id="about" class="about section-pad">
@@ -208,10 +231,18 @@
             <span data-i18n="startup.m3">INTERNATIONAL / PRODUCT-ADJACENT</span>
           </div>
         </div>
-        <div class="startup-visual startup-visual--clean" aria-label="Визуальная айдентика ACE">
-          <figure class="startup-cards startup-cards--solo">
-            <img src="ace-cards-cutout.webp" alt="Дизайн студенческих карт ACE" loading="lazy" decoding="async">
-          </figure>
+        <div class="startup-diagram" aria-hidden="true">
+          <div class="ace-core">ACE</div>
+          <div class="ace-node n1">IDENTITY</div>
+          <div class="ace-node n2">MARKETING</div>
+          <div class="ace-node n3">WEB</div>
+          <div class="ace-node n4">SMM</div>
+          <div class="ace-node n5">PRODUCT</div>
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+            <line x1="50" y1="50" x2="17" y2="19"/><line x1="50" y1="50" x2="80" y2="16"/>
+            <line x1="50" y1="50" x2="88" y2="65"/><line x1="50" y1="50" x2="51" y2="88"/>
+            <line x1="50" y1="50" x2="14" y2="70"/>
+          </svg>
         </div>
       </div>
     </section>
